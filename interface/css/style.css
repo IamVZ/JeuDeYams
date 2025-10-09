@@ -1,0 +1,182 @@
+/******************/
+/* Partie commune */
+/******************/
+
+html{
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+}
+body{
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+hr{
+    border: solid black 1px;
+    width: 99%;
+}
+
+body main {
+    background-color: rgb(10, 10, 100);
+    margin: 0;
+    padding: 0;
+}
+body main > h2{
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+/* Pour le header */
+
+body header {
+    background-color: aliceblue;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 20px;
+}
+body header article{
+    display: flex;
+    justify-content: space-around;
+}
+body header article h1{
+    margin: 10px;
+    font-size: 4rem;
+}
+header nav a{
+    text-decoration: none;
+    background-color: rgb(0, 0, 86);
+    color: rgb(254, 254, 254);
+    padding: 6px;
+    border-radius: 10px;
+}
+header nav a:hover{
+    text-decoration: none;
+    background-color: rgb(160, 160, 237);
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 10px;
+}
+body header h2{
+    display: inline-block;
+}
+input{
+    display: inline-block;
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+/*************************/
+/* Pour la partie index  */
+/*************************/
+
+body main > h3{
+    text-align: center;
+    color: aliceblue;
+}
+.tour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.tour .round {
+    background-color: aliceblue;
+    display: inline-block;
+    width: 28%;
+    padding: 15px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    border: solid black 2px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.621);
+}
+.round img{
+    width: 10%;
+    height: auto;
+}
+.round:nth-of-type(14){
+    flex: 2;
+    text-align: center;
+}
+
+.round:nth-of-type(14) .container{
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+.round:nth-of-type(14) h3 {
+    font-size: 2rem;
+}
+@media (max-width: 600px){
+    .tour{
+        flex-direction: column;
+    }
+    .tour .round{
+        width: 80%;
+    }
+    body header article{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1100px) and (min-width: 601px){
+    .tour{
+        justify-content: space-around;
+    }
+    .tour .round{
+        width: 40%;
+    }
+}
+
+/*************************/
+/* Pour la partie vu2    */
+/*************************/
+
+.section_vu2{
+    display: flex;
+    background-color: rgb(39, 39, 145);
+}
+button{
+    flex: 1;
+    margin: 230px 20px;
+    padding: 0;
+    height: 150px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+button img{
+    height: 100px;
+    width: auto;
+}
+.section_vu2 article{
+    flex: 4;
+    background-color: aliceblue;
+    margin: 40px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 50px rgba(0, 0, 0, 0.75);
+}
+
+footer{
+    background-color: rgb(10, 10, 80);
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+footer h3{
+    text-align: center;
+    width: 100%;
+}
+.container{
+    display: flex;
+}
+footer .container article{
+    text-align: center;
+    flex: 1;
+}

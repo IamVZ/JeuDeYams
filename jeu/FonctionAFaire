@@ -1,0 +1,18 @@
+Fonction a faire:
+  Fonctionnement de la partie:
+    -Initialisation d'un round
+    -Lancer de dé
+    -relancer a les dé a l'indice voulue (chaine de charactère split)
+    -LancerBonneFonctionChallenge
+
+
+
+  Challenge:
+    -nombre de X (FAIT)
+    -Brelan
+    -Carre
+    -Full
+    -Petite suite
+    -Grande suite
+    -Yams
+    -Chance

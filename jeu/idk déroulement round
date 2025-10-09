@@ -1,0 +1,60 @@
+
+variable:
+les dé (valeur random de 1 a 6):
+	- d1
+	- d2
+	- d3
+	- d4
+	- d5
+
+stocker dans ???  (un truc qui permet de facilement reconnaitre des chiffre stocker dedans)
+
+
+lancer:
+	- cmptlancer (pour compter les lancer)
+
+chall:
+	- chall_blabla_on (a initialiser a la valeur du jouer actif)
+	- …
+	- …
+	- …
+	
+joueur (structure):
+	- score (cmpt de score)
+	- score _chall_mineur (cmpt de point pour les chall mineur du joueur, il arrive a 63+ ont fait +35)
+	- tours (cmpt tour)
+	- chall_blabla_on (les chall qui sont dispo pour ce joueur)
+	- …
+	- …
+
+exemple tour:
+
+début tour
+
+afficher joueur
+afficher tour
+afficher score
+afficher chall restant
+afficher valeur restante pour le +35 des chall mineur
+afficher lancer restant
+*lancer les dés*
+afficher les dés
+demander les dés a garder
+si dés garder = oui
+	*lancer dés non garder*
+	demander dés a garder
+	si dés garder = oui
+		*lancer dés  non garder*
+sinon
+	afficher la demande de choix du chall
+	vérifier si chall dispo (les chall sont des fonctions)
+	si chall dispo
+		envoyer les dés dans la fonction
+	renvoyer les point obtenue
+	si c'était chall mineur et que +35 activer
+		afficher que bonus +35 est activer
+	afficher le score gagner
+	afficher le nouveau score total
+
+fin de tour
+
